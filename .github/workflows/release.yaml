@@ -33,14 +33,14 @@ jobs:
     # - name: init
     #   run: make init
 
-    # - name: Build
-    #   run: make build
+    # - name: Lint
+    #   run: make lint
 
     - name: Test
       run: make test
 
-    # - name: Test
-    #   run: make lint
+    - name: Build
+      run: make plugin-build
 
     # - id: upload-cli-artifacts
     #   uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
