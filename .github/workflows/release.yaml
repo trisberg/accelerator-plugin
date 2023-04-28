@@ -50,7 +50,10 @@ jobs:
       run: make test
 
     - name: Build
-      run: make plugin-build
+      run: |
+        tanzu version
+        tanzu plugin list
+        make plugin-build
 
     # - id: upload-cli-artifacts
     #   uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
