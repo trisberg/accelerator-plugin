@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Ensure Make is run with bash shell as some syntax below is bash-specific
-SHELL := /usr/bin/env bash
+SHELL := bash
 
 GOHOSTOS ?= $(shell go env GOHOSTOS)
 GOHOSTARCH ?= $(shell go env GOHOSTARCH)
